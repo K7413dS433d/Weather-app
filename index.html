@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="shortcut icon" href="./assets/icons/logo@2x.png" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- custom style  -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg py-4 align-items-center">
+      <div class="container py-3 px-lg-5">
+        <a
+          class="navbar-brand text-white d-flex gap-2 align-items-center"
+          href="#"
+        >
+          <img src="./assets/icons/logo@2x.png" alt="logo" />
+          <span class="d-inline-flex flex-column"
+            ><h2 class="fs-6 fw-bold mb-1">Weather</h2>
+            <p class="fw-lighter opacity-75 mb-0">tagline goes here</p></span
+          >
+        </a>
+        <button
+          class="navbar-toggler rounded-5 px-1 py-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end mt-5 mt-lg-0"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav gap-lg-2">
+            <a
+              class="nav-link text-white rounded-5 px-4 py-4 py-lg-2 d-flex align-items-center justify-content-center fw-medium active"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+            <a
+              class="nav-link text-white rounded-5 px-4 py-4 py-lg-2 d-flex align-items-center justify-content-center fw-medium"
+              href="#"
+              >News</a
+            >
+            <a
+              class="nav-link text-white rounded-5 px-4 py-4 py-lg-2 d-flex align-items-center justify-content-center fw-medium"
+              href="#"
+              >Live cameras</a
+            >
+            <a
+              class="nav-link text-white rounded-5 px-4 py-4 py-lg-2 d-flex align-items-center justify-content-center fw-medium"
+              href="#"
+              >Photos</a
+            >
+            <a
+              class="nav-link text-white rounded-5 px-4 py-4 py-lg-2 d-flex align-items-center justify-content-center fw-medium"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- header  -->
+    <header class="container-fluid pt-md-4 pb-5 d-flex justify-content-center">
+      <div class="container w-100">
+        <div class="row">
+          <!-- search bar  -->
+          <div class="search col-12">
+            <div
+              class="inner my-5 position-relative d-flex justify-content-end align-items-center"
+            >
+              <input
+                class="form-control text-white rounded-5"
+                type="text"
+                id="search"
+                placeholder="Find your location..."
+              />
+              <button
+                type="button"
+                class="btnS btn btn-primary position-absolute rounded-5 px-4 me-2"
+                id="search-btn"
+              >
+                Find
+              </button>
+            </div>
+          </div>
+          <!-- first card  -->
+          <div class="col-lg-4">
+            <div class="inner">
+              <div class="card border-0">
+                <div
+                  class="card-header d-flex justify-content-between text-white border-0"
+                >
+                  <p class="day mb-0">Saturday</p>
+                  <p class="date mb-0">6 July</p>
+                </div>
+                <div class="card-body text-white">
+                  <p class="city opacity-75">Cairo</p>
+                  <div
+                    class="tmp-img d-flex flex-column flex-sm-row align-items-sm-center gap-sm-4 flex-lg-column align-items-lg-start gap-lg-0"
+                  >
+                    <p class="temp fw-bold mb-0">55<sup>o</sup>C</p>
+                    <img
+                      src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                      alt="icon"
+                      style="width: 90px; height: 90px"
+                    />
+                  </div>
+                  <p class="status text-info">Partly cloudy</p>
+                  <div class="footer d-flex gap-4 opacity-75">
+                    <div class="d-flex gap-1 align-items-center">
+                      <img
+                        src="./assets/icons/icon-umberella.png"
+                        alt="icon 1"
+                      
+                      />
+                      <p class="number mb-0">55%</p>
+                    </div>
+                    <div class="d-flex gap-1 align-items-center">
+                      <img src="./assets/icons/icon-wind.png" alt="icon 2" />
+                      <p class="number mb-0">55km/h</p>
+                    </div>
+                    <div class="d-flex gap-1 align-items-center">
+                      <img
+                        src="./assets/icons/icon-compass.png"
+                        alt=" icon 3"
+                      />
+                      <p class="number mb-0">45</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second card  -->
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="inner h-100">
+              <div class="card border-0 align-items-center h-100">
+                <div
+                  class="card-header d-flex justify-content-center text-white border-0 w-100"
+                >
+                  <p class="day mb-0">Saturday</p>
+                </div>
+                <div class="card-body text-white mt-5">
+                  <div class="tmp-img d-flex flex-column align-items-center">
+                    <img
+                      src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                      alt="icon"
+                    />
+                    <p class="temp fs-4 fw-bold mb-0">55 <sup>o</sup>C</p>
+                    <p class="fw-normal opacity-75">55 <sup>o</sup></p>
+                  </div>
+                  <p class="status text-info">Partly cloudy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- third card  -->
+          <div class="col-lg-4">
+            <div class="inner h-100">
+              <div class="card border-0 align-items-center h-100">
+                <div
+                  class="card-header d-flex justify-content-center text-white border-0 w-100"
+                >
+                  <p class="day mb-0">Saturday</p>
+                </div>
+                <div class="card-body text-white mt-5">
+                  <div class="tmp-img d-flex flex-column align-items-center">
+                    <img
+                      src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                      alt="icon"
+                    />
+                    <p class="temp fs-4 fw-bold mb-0">55 <sup>o</sup>C</p>
+                    <p class="fw-normal opacity-75">55 <sup>o</sup></p>
+                  </div>
+                  <p class="status text-info">Partly cloudy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="container-flouid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="search col-12 col-lg-8">
+            <div
+              class="inner position-relative d-flex align-items-center justify-content-end mb-4"
+            >
+              <input
+                class="form-control form-control-lg text-white rounded-5"
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <button
+                type="button"
+                class="btnS btn btn-primary position-absolute rounded-5 px-4 me-2 py-2"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="search col-12 col-lg-4">
+            <div
+              class="inner icons d-flex justify-content-start justify-content-lg-center gap-2"
+            >
+              <a
+                href="https://www.facebook.com"
+                class="rounded-circle d-inline-flex justify-content-center align-items-center text-decoration-none"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.facebook.com"
+                class="rounded-circle d-inline-flex justify-content-center align-items-center text-decoration-none"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.facebook.com"
+                class="rounded-circle d-inline-flex justify-content-center align-items-center text-decoration-none"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+              <a
+                href="https://www.facebook.com"
+                class="rounded-circle d-inline-flex justify-content-center align-items-center text-decoration-none"
+                ><i class="fa-brands fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+          <div class="search col-12 col-lg-12">
+            <p class="text-white copy opacity-75">
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-white border-0">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Error !</h1>
+            <button
+              type="button"
+              class="btn-close opacity-100"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-white text-center fs-2 opacity-75">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- custom script  -->
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

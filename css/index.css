@@ -1,0 +1,203 @@
+:root {
+  --bg-primary: #1e202b;
+  --bg-secondary: #2d303d;
+  --bg-third: #323544;
+  --bg-fourth: #262936;
+  --bg-fourth: #009ad8;
+  --bg-fifth: #262936;
+  --toggler-border-size: 2px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* nav  */
+nav {
+  background-color: var(--bg-primary);
+}
+
+nav .navbar-brand img {
+  height: 35px;
+}
+
+nav .navbar-brand span p {
+  font-size: 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+button.navbar-toggler {
+  border: var(--toggler-border-size) solid transparent;
+  box-shadow: none !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.navbar-nav a {
+  font-size: 14px;
+  border: var(--toggler-border-size) solid transparent;
+  line-height: 8px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+button.navbar-toggler:hover,
+.active,
+.navbar-nav a:hover {
+  border: var(--toggler-border-size) solid var(--bg-fourth) !important;
+  color: var(--bg-fourth) !important;
+}
+
+@media (max-width: 990px) {
+  .active,
+  .navbar-nav a:hover {
+    border: var(--toggler-border-size) solid transparent !important;
+    color: var(--bg-fourth) !important;
+    border-bottom-color: rgb(79, 72, 86) !important;
+  }
+
+  .navbar-nav {
+    background-color: var(--bg-secondary) !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .navbar-nav a {
+    border-bottom-color: rgb(79, 72, 86) !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+  }
+
+  .navbar-nav a:nth-child(5) {
+    border-bottom-color: transparent !important;
+  }
+}
+
+/* header  */
+header {
+  background-image: url("./../assets/images/banner.png"),
+    linear-gradient(to bottom, var(--bg-primary), var(--bg-primary));
+  background-repeat: no-repeat;
+}
+
+/*search*/
+.search .inner input {
+  box-shadow: none !important;
+  background-color: var(--bg-primary);
+  border: none !important;
+  padding: 12px;
+}
+
+.btnS {
+  background-color: var(--bg-fourth);
+  font-size: 14px;
+}
+
+.btnS:hover {
+  background-color: var(--bg-fourth);
+}
+
+/* cards  */
+.card {
+  background-color: var(--bg-third);
+}
+
+.card-header {
+  background-color: var(--bg-secondary);
+}
+
+.card-header > p {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.status {
+  font-size: 0.875rem;
+}
+
+.temp {
+  font-size: 5.625rem;
+}
+
+.col-lg-4:nth-child(3) > .inner > .card {
+  background-color: var(--bg-fifth);
+}
+
+.col-lg-4:nth-child(3) > .inner > .card .card-header {
+  background-color: var(--bg-primary);
+}
+
+input::placeholder {
+  color: rgb(100, 93, 93) !important;
+  font-size: 14px;
+}
+
+.footer > div > img {
+  width: 20px !important;
+}
+
+.footer > div > p {
+  font-size: 14px !important;
+}
+
+/* footer */
+footer {
+  background-color: var(--bg-fifth);
+}
+
+.icons a {
+  --circle-width: 40px;
+  width: var(--circle-width);
+  height: var(--circle-width);
+  background-color: var(--bg-primary);
+  color: var(--bg-fourth);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.icons a:hover {
+  background-color: var(--bg-fourth);
+  color: white;
+}
+
+.copy {
+  font-size: 0.875rem;
+}
+
+/* modal  */
+
+.modal-content {
+  background-color: var(--bg-primary);
+}
+
+.modal-body {
+  background-color: var(--bg-fifth);
+}
+
+.btn-close {
+  box-shadow: none !important;
+}
+
+.btn-close {
+  background-image: url("./../assets/icons/close.png");
+}
