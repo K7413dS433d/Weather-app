@@ -1,8 +1,4 @@
-let apiKey;
-
-(async () => {
-  apiKey = await process.env.REACT_APP_WEATHER_API_KEY;
-})();
+import apiKey from "./env.js";
 
 const baseUrl = "https://api.weatherapi.com/v1/forecast.json";
 
