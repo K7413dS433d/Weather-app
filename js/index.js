@@ -27,8 +27,8 @@ function modalTrigger(data) {
   modal.show();
 }
 
-//event handlers
-searchBtn.addEventListener("click", async () => {
+//handle search
+async function handleSearch() {
   const city = search.value;
   if (city) {
     try {
@@ -40,6 +40,18 @@ searchBtn.addEventListener("click", async () => {
   } else {
     modalTrigger("Enter Valid City");
   }
+}
+
+//trigger when press enter key
+search.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    handleSearch();
+  }
+});
+
+//trigger when press find
+searchBtn.addEventListener("click", () => {
+  handleSearch();
 });
 
 //set data to html
