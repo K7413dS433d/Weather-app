@@ -4,7 +4,7 @@ let apiKey;
   apiKey = await process.env.REACT_APP_WEATHER_API_KEY;
 })();
 
-const baseUrl = "http://api.weatherapi.com/v1/forecast.json";
+const baseUrl = "https://api.weatherapi.com/v1/forecast.json";
 
 //get all data
 async function getData(location) {
