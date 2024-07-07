@@ -1,4 +1,4 @@
-let apiKey = process.env.WEATHER_API_KEY;
+let apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 const baseUrl = "http://api.weatherapi.com/v1/forecast.json";
 
 //get all data
