@@ -1,4 +1,5 @@
 const apiKey = process.env.WEATHER_API_KEY;
+console.log(apiKey);
 
 const baseUrl = "https://api.weatherapi.com/v1/forecast.json";
 
