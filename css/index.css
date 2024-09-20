@@ -92,6 +92,7 @@ button.navbar-toggler:hover,
 
 /* header  */
 header {
+  margin-top: 120px;
   background-image: url("./../assets/images/banner.png"),
     linear-gradient(to bottom, var(--bg-primary), var(--bg-primary));
   background-repeat: no-repeat;
