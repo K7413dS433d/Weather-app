@@ -12,13 +12,30 @@ const search = document.getElementById("search");
 const searchBtn = document.getElementById("search-btn");
 const modalBody = document.querySelector(".modal-body");
 
-// wait for V2 the default city would be assigned to your location
-let defaultCity = "paris";
-//self invoke function to get the initial data
-(async () => {
+//function to get the initial data
+async function currentLocation() {
+  let defaultCity;
+  if (navigator.geolocation) {
+    // Wrap getCurrentPosition in a Promise
+    defaultCity = await new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const coordinates = `${position.coords.latitude},${position.coords.longitude}`;
+          resolve(coordinates);
+        },
+        (error) => {
+          //if the user doesn't allow the location the default city will be cairo
+          resolve("cairo"); // Fallback to default city on error
+        }
+      );
+    });
+  }
   const cityData = await getData(defaultCity);
   setData(cityData);
-})();
+}
+
+//set the initial data
+addEventListener("load", currentLocation);
 
 //modal trigger function
 function modalTrigger(data) {
