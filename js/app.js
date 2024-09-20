@@ -1,5 +1,5 @@
-const apiKey = process.env.WEATHER_API_KEY;
-console.log(apiKey);
+// you can use env variables to hide the api key
+const apiKey = "60575869def44fc093252212240607";
 
 const baseUrl = "https://api.weatherapi.com/v1/forecast.json";
 
