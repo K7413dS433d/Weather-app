@@ -1,4 +1,4 @@
-import apiKey from "./env.js";
+const apiKey = process.env.WEATHER_API_KEY;
 
 const baseUrl = "https://api.weatherapi.com/v1/forecast.json";
 
