@@ -27,4 +27,7 @@ Check out the live demo of the app [Weather App](https://weather-app-alpha-orpin
 
 ## Video
 
-Watch a video walkthrough of the Weather App [here](#).
+Watch a video walkthrough of the Weather App 
+
+https://github.com/user-attachments/assets/1615c8bf-037d-49eb-929a-c246ceb5f10b
+
